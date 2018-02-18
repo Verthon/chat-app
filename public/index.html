@@ -6,18 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
   <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <title>Chat App</title>
 </head>
 <body>
   <div class="container">
-    <div class="chat-window">
-      <div id="output" class="output"></div>
-    </div>
-    <label for="name">Name</label>
-    <input type="text" id="name" class="name">
-    <label for="message">Massage</label>
-    <input type="text" id= "message" class="message">
-    <button class="send" id="send">Send</button>
+    <div id="output" class="output"></div>
+    <input type="text" id="name" placeholder="Your nickname" class="name">
+    <input type="text" id= "message" placeholder="Your message" class="message">
+    <button class="send" id="btn">Send</button>
   </div>
   <script src="/chat.js"></script>
 </body>

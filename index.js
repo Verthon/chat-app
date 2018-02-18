@@ -23,4 +23,11 @@ let io = socket(server);
 */
 io.on('connection', (socket) =>{
   console.log('made a connection', socket.id);
+/*receive data from client 'chat-msg', once he receive
+- fire function 'data' is data from client(msg, name),
+- then send data to all sockets(clients) connected to the server
+*/
+  socket.on('chat-msg', (data) =>{
+    io.sockets.emit('chat-msg', data);
+  });
 });

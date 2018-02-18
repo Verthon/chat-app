@@ -1,6 +1,53 @@
 body * {
   box-sizing: border-box;
 }
+input{
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+input:last-child{
+  border: 0 1px 1px 1px solid #ddd;
+}
+input:focus, button:focus{
+  outline: none;
+}
+p{
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 0;
+}
 body{
   background: mistyrose;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  font-family: 'Raleway';
+  font-size: 14px;
+  color: #555;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-self: center;
+  border: 1px solid #ccc;
+}
+.output{
+  height: 200px;
+  background-color: #f7f8f7;
+}
+.send{
+  border: 0;
+  padding: 10px;
+  background-color: #329932;
+  color: #f2f3f4;
+}
+
+@media (max-width: 768px){
+  body{
+    font-size: 18px;
+  }
+  .container{
+    width: 100%;
+  }
 }
