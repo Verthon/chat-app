@@ -30,4 +30,8 @@ io.on('connection', (socket) =>{
   socket.on('chat-msg', (data) =>{
     io.sockets.emit('chat-msg', data);
   });
+
+  socket.on('typing', (data) =>{
+    socket.broadcast.emit('typing', data);
+  });
 });

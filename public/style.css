@@ -1,8 +1,10 @@
 body * {
   box-sizing: border-box;
+  font-family: 'Raleway';
+  color: #333;
 }
 input{
-  border: 1px solid #ddd;
+  border: 0;
   padding: 10px;
 }
 input:last-child{
@@ -12,7 +14,7 @@ input:focus, button:focus{
   outline: none;
 }
 p{
-  border: 1px solid #ddd;
+  border: 0;
   padding: 10px;
   margin: 0;
 }
@@ -30,7 +32,7 @@ body{
   flex-direction: column;
   width: 300px;
   align-self: center;
-  border: 1px solid #ccc;
+  box-shadow: 1px 3px 20px rgba(63, 63, 63, 0.57);
 }
 .output{
   height: 200px;
